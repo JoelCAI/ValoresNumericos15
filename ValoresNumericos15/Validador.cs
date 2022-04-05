@@ -10,18 +10,24 @@ namespace ValoresNumericos15
     {
         public static void CompararStringConNumero(string str1)
         {
-            int nuevoUno;
+            string opcion = str1.Replace('.', ',');
 
+            decimal nuevoUno;
+
+            bool ok = decimal.TryParse(opcion, out nuevoUno);
             
-            if (int.TryParse(str1, out nuevoUno))
+                       
+            if (ok)
             {
-                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " SI es un número y es: " + "*" + nuevoUno + "*");
+                Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " Es un número y es: " + "*" + nuevoUno + "*");
+                
             }
+ 
             else
             {
 
                 Console.WriteLine("\n La cadena" + " *" + str1 + "*" + " NO es un número ");
-                Console.WriteLine(" La función TryParse no convierte un caracter ");
+                
             }
         }
 

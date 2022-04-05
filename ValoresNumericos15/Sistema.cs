@@ -15,7 +15,7 @@ namespace ValoresNumericos15
 
             Validador.Bienvenida();
 
-            cadenaUno = Validador.ValidarString("\n Ingrese la primera frase");
+            cadenaUno = Validador.ValidarString("\n Ingrese una frase");
 
             Validador.MostrarString(cadenaUno);
  
