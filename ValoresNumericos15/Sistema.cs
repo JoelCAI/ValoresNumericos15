@@ -11,8 +11,7 @@ namespace ValoresNumericos15
         public void MenuPrincipal()
         {
             string cadenaUno;
-            string cadenaDos;
-
+          
             Validador.Bienvenida();
 
             cadenaUno = Validador.ValidarString("\n Ingrese una frase");
